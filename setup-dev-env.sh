@@ -75,7 +75,11 @@ while [ "$1" != "" ]; do
         ;;
     *)
         args+=("$1")
-        ;;
+        ;;        # ...existing code...
+            --skip-agnocast)
+                option_skip_agnocast=true
+                ;;
+        # ...existing code...
     esac
     shift
 done
